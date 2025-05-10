@@ -1,0 +1,48 @@
+Project Report: ANN-Based Pest Detection System
+1. Project Title:
+Artificial Neural Network (ANN)-Based Pest Detection System
+2. Introduction:
+Agricultural productivity is significantly affected by pests, leading to reduced crop yield and economic loss. Early pest detection can help farmers take prompt action to prevent infestations. This project utilizes Artificial Neural Networks (ANNs) to detect pests either from environmental data or through image classification, providing a smart solution to support precision agriculture.
+3. Objectives:
+• To design and implement an ANN model capable of identifying common crop pests.
+• To classify pest types based on input features (e.g., images or environmental data like temperature, humidity).
+• To assist farmers and agricultural professionals in timely pest control measures.
+4. Methodology:
+Data Collection:
+• Collected pest images or environmental datasets from open-source platforms (e.g., Kaggle, PlantVillage, or local field surveys).
+• Labeled datasets included various pest types such as aphids, beetles, caterpillars, etc.
+Data Preprocessing:
+• Images resized and normalized.
+• Environmental data cleaned and features scaled.
+• Dataset split into training (70%), validation (15%), and test sets (15%).
+Model Design:
+• Architecture: Multi-layer perceptron (MLP) or Convolutional Neural Network (CNN) if using image data.
+• Input Layer: Number of neurons equal to the number of input features (pixels or environmental parameters).
+• Hidden Layers: 2–3 layers with ReLU activation.
+• Output Layer: Softmax activation for multi-class classification.
+Training and Testing:
+• Used cross-entropy loss and Adam optimizer.
+• Trained over multiple epochs with batch normalization and dropout to prevent overfitting.
+• Evaluated using accuracy, precision, recall, and F1-score.
+5. Tools and Technologies Used:
+• Programming Language: Python
+• Libraries: TensorFlow, Keras, OpenCV (for image preprocessing), Pandas, NumPy
+• Jupyter Notebook or Google Colab for development
+6. Results:
+• The trained ANN achieved X% accuracy on the test dataset (replace X with actual value).
+• Confusion matrix showed strong performance in identifying key pest categories.
+• The model responded with an inference time of under 1 second per image.
+7. Discussion:
+• ANN models demonstrated effectiveness in classifying pests from input data.
+• Limitations include dependency on dataset quality and variations in lighting or environmental noise.
+• Potential improvement through transfer learning or hybrid models.
+8. Applications:
+• Can be integrated into mobile apps for farmers.
+• Used in smart farming systems with IoT sensors.
+• Scalable to other agricultural regions with model retraining.
+9. Conclusion:
+The ANN-based pest detection system is a promising step toward automating pest diagnosis in agriculture. With further refinement and integration into existing agricultural practices, it can contribute significantly to food security and sustainable farming.
+10. References:
+[1] PlantVillage Dataset - https://plantvillage.psu.edu
+[2] Brownlee, J. (2022). *Deep Learning with Python*. Machine Learning Mastery.
+[3] Kaggle: Pest and Disease Image Dataset
